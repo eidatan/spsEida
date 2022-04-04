@@ -67,88 +67,6 @@ var convertRandomNumberToSpsState = function () {
   }
 };
 
-// // function to play SPS normally or reserve logic
-// var mainMode = function (input) {
-//   if (input == "Normal") {
-//     // conditional check for draw
-//     // how to group it?
-//     if (input2 == "scissors" && computerDecision == "scissors") {
-//       var result = `It's a draw. You showed ${input}, and computer also showed ${computerDecision}`;
-//       return result;
-//     }
-//     if (input2 == "paper" && computerDecision == "paper") {
-//       var result = `It's a draw. You showed ${input}, and computer also showed ${computerDecision}`;
-//       return result;
-//     }
-//     if (input2 == "stone" && computerDecision == "stone") {
-//       var result = `It's a draw. You showed ${input}, and computer also showed ${computerDecision}`;
-//       return result;
-//     }
-
-//     // conditional check if you win
-//     // how to can group it?
-//     if (input2 == "paper" && computerDecision == "stone") {
-//       counterForYouWin = counterForYouWin + 1;
-//       console.log(
-//         `you wins ${counterForYouWin}x, computer won ${counterForComputerWin}x`
-//       );
-
-//       var result = `You win! Your ${input} beats computer's ${computerDecision}`;
-//       return result;
-//     }
-
-//     if (input2 == "stone" && computerDecision == "scissors") {
-//       counterForYouWin = counterForYouWin + 1;
-//       console.log(
-//         `you wins ${counterForYouWin}x, computer won ${counterForComputerWin}x`
-//       );
-
-//       var result = `You win! Your ${input} beats computer's ${computerDecision}`;
-//       return result;
-//     }
-
-//     if (input2 == "scissors" && computerDecision == "paper") {
-//       counterForYouWin = counterForYouWin + 1;
-//       console.log(
-//         `you wins ${counterForYouWin}x, computer won ${counterForComputerWin}x`
-//       );
-
-//       var result = `You win! Your ${input} beats computer's ${computerDecision}`;
-//       return result;
-//     }
-
-//     // conditional check if you lose
-//     // how to group it?
-//     if (input2 == "stone" && computerDecision == "paper") {
-//       counterForComputerWin = counterForComputerWin + 1;
-//       console.log(
-//         `computer wins ${counterForComputerWin}x, you won ${counterForYouWin}x`
-//       );
-
-//       var result = `Oops, you lose! Your ${input} is beaten by computer's ${computerDecision}`;
-//       return result;
-//     }
-//     if (input2 == "scissors" && computerDecision == "stone") {
-//       counterForComputerWin = counterForComputerWin + 1;
-//       console.log(
-//         `computer wins ${counterForComputerWin}x, you won ${counterForYouWin}x`
-//       );
-
-//       var result = `Oops, you lose! Your ${input} is beaten by computer's ${computerDecision}`;
-//       return result;
-//     }
-
-//     if (input2 == "paper" && computerDecision == "scissors") {
-//       counterForComputerWin = counterForComputerWin + 1;
-//       console.log(
-//         `computer wins ${counterForComputerWin}x, you won ${counterForYouWin}x`
-//       );
-//       var result = `Oops, you lose! Your ${input} is beaten by computer's ${computerDecision}`;
-//       return result;
-//     }
-//   }
-// };
-
 //initialise counter state
 var counterForYouWin = 0;
 var counterForComputerWin = 0;
@@ -162,7 +80,6 @@ var main = function (input) {
   console.log("You showed " + input);
 
   // conditional check for draw
-  // how to group it?
   if (input == "scissors" && computerDecision == "scissors") {
     var result = `It's a draw. You showed ${input}, and computer also showed ${computerDecision}`;
     return result;
@@ -177,7 +94,6 @@ var main = function (input) {
   }
 
   // conditional check if you win
-  // how to can group it?
   if (input == "paper" && computerDecision == "stone") {
     counterForYouWin = counterForYouWin + 1;
     console.log(
@@ -209,7 +125,6 @@ var main = function (input) {
   }
 
   // conditional check if you lose
-  // how to group it?
   if (input == "stone" && computerDecision == "paper") {
     counterForComputerWin = counterForComputerWin + 1;
     console.log(
